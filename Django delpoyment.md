@@ -100,6 +100,12 @@ DATABASES = {
 }
 }
 ```
+
+Don't forget to add this line:
+```
+db_from_env = dj_database_url.config(conn_max_age=600, ssl_require=True)
+DATABASES['default'].update(db_from_env)
+```
 Now we can make migrations:
 ```
 python manage.py makemigrations
@@ -107,5 +113,55 @@ python manage.py migrate
 ```
 ### Now we have set up Postgres as the database for the project, let's also set up AWS S3 to serve static files.
 In my experience of deploying Django apps to Heroku the first couple of times, static files had caused me huge headache. I found this to be a good solution.
+I assume you already have a AWS account. Once you are logged in, search for S3 and navigate to the page. 
+Click on Create Bucket and create one. 
+Now let's configure Django and connect them.
 
+Before that, we need to install boto3, this is the AWS SDK for Python. [Here is the documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
 
+```
+pip install boto3
+```
+Then let's add this to the settings.py file
+
+```
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3ManifestStaticStorage'
+
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
+
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+AWS_S3_SIGNATURE_VERSION = 's3v4'
+AWS_S3_REGION_NAME = 'eu-central-1'
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+```
+Here you might wonder, what is os.environ.get doing here?
+
+Enters environment variables. As far as I understand, these are variables that are saved in your environment as key/value pairs. These can be read by calling the os.environ.get function and provide the key. 
+
+Make sure you have os imported already for this to work.
+
+```
+import os
+```
+How to set environment variables? Apparently there are many ways. The one I like, which works on Mac is by using the following command:
+```
+export MYVAR='thisismyenvironmentvariable'
+```
+If you want to check if it is set, can use this line:
+```
+echo $MYVAR
+```
+So let's set the three environment variables used here:
+```
+export AWS_ACCESS_KEY_ID ='xxxxxx'
+export AWS_SECRET_ACCESS_KEY='xxxxxxx'
+export AWS_STORAGE_BUCKET_NAME='xxxxxxxxx'
+
+```
+All the values should match your AWS account and the S3 bucket name you have just created.
+
+### Good job! Now we are ready to configurate our Django app for Heroku deployment.
