@@ -1,13 +1,4 @@
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deploy Django projects with Heroku</title>
-</head>
-
-<body>
     Pre-requisition: A Django project
 
     What you will learn:
@@ -116,7 +107,3 @@
         ## Now we have set up Postgres as the database for the project, let's also set up AWS S3 to
         serve static files.
 
-
-</body>
-
-</html>
