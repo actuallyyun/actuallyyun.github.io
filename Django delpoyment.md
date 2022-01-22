@@ -2,9 +2,10 @@
     # Pre-requisition: A Django project
 
     What you will learn:
-    1.Set up Postgresql as the database
-    2.Configurate your Django app for Heroku deployment
-    Serve static file with AWS S3
+    1. Set up Postgresql as the database
+    2. Serve static file with AWS S3
+    3. Configurate your Django app for Heroku deployment
+    
     Enviroment variables
 
 
