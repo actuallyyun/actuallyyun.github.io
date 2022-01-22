@@ -1,5 +1,5 @@
 
-    Pre-requisition: A Django project
+    # Pre-requisition: A Django project
 
     What you will learn:
     1.Set up Postgresql as the database
