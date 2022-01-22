@@ -165,3 +165,67 @@ export AWS_STORAGE_BUCKET_NAME='xxxxxxxxx'
 All the values should match your AWS account and the S3 bucket name you have just created.
 
 ### Good job! Now we are ready to configurate our Django app for Heroku deployment.
+Over the course of deploying my apps, I found and used servals heroku documentations. The one I found that helped me the most was [this page](https://blog.heroku.com/from-project-to-productionized-python) In fact, there are quite a lot of details you have to attend in this step.
+1. First,.gitignore file. Copy the following code and paste it in your .gitignore file that should be in your roote directory.(If not, you should create one)
+    ```
+    /venv
+    __pycache__
+    yourprojects/static/
+    ```
+
+2. Second, modularize your settings.py file 
+   I found this to be a great way to organize the project.
+   First, in your project directory, add a folder named ``` settings ``` and move your ```settings.py``` file here. I would also change the file name to ```base.py``` and use it as my base settings. Don't forget to add a ```__pyche__``` file in the folder to let Django know this is a module.
+   To not break the app, go to ```wsgi.py``` file and find this line:
+   ```os.environ.setdefault("DJANGO_SETTINGS_MODULE", "gettingstarted.settings")```
+   Change it to:
+   ```os.environ.setdefault("DJANGO_SETTINGS_MODULE", "gettingstarted.settings.base")```
+   
+3. The infamous ```collectstatics``` 
+   I remember how lost I was when I ran into this error the first time. So basically once you set the DEBUG to False, Django's collect static won't work either because Django doesn't want to deal with it. So what you have to do is to use another tool to manage your static files. Heroku recommends [WhiteNoise](http://whitenoise.evans.io/en/stable/django.html)
+   ``` pip install whitenoise ```
+   Add this line to your MIDDLEWARE list in your ```basy.py```
+   ```"whitenoise.middleware.WhiteNoiseMiddleware",```
+   Add this line at the end of the ```base.py``` file
+   ```STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+    ```
+4. Set up heroku.py
+    Simply create a heroku.py file in your settings file and copy and paste this into it.
+    ```
+        """
+    Production Settings for Heroku
+    """
+
+    import environ
+
+    # If using in your own project, update the project namespace below
+    from gettingstarted.settings.base import *
+
+    env = environ.Env(
+        # set casting, default value
+        DEBUG=(bool, False)
+    )
+
+    # False if not in os.environ
+    DEBUG = env('DEBUG')
+
+    # Raises django's ImproperlyConfigured exception if SECRET_KEY not in os.environ
+    SECRET_KEY = env('SECRET_KEY')
+
+    ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
+
+    # Parse database connection url strings like psql://user:pass@127.0.0.1:8458/db
+    DATABASES = {
+        # read os.environ['DATABASE_URL'] and raises ImproperlyConfigured exception if not found
+        'default': env.db(),
+    }
+    ```
+    5. Requirements.txt file
+    6. runtime.txt file
+    7. Procfile
+    8. Create a heroku app
+    9. Setting environment variables on Heroku
+    10. Create and connect Heroku database
+    11. Sync local db data with heroku
+    12. The exciting/~~frustrating~~ climax
+   
