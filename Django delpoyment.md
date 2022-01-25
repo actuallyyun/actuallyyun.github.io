@@ -256,11 +256,25 @@ And the CERECT_KEY:
 ```heroku config:set SECRET_KEY=<gobbledygook>
 ```
 After we have set environment variables for Django, we need to do the same for AWS S3 so that Heroku can access your static file.
-```heroku config:set AWS_ACCESS_KEY_ID=xxx AWS_SECRET_ACCESS_KEY=yyy```
-```AWS_STORAGE_BUCKET_NAME='yourawsbucketname'```
+```
+heroku config:set AWS_ACCESS_KEY_ID=xxx 
+heroku config:setAWS_SECRET_ACCESS_KEY=yyy
+AWS_STORAGE_BUCKET_NAME='yourawsbucketname'
+```
 10. Set up Heroku database
+First check if you have a database already.
+```heroku addons```
+If it says no, then let's go ahead and create one.
+```
+heroku addons:create heroku-postgresql:hobby-dev
+```
+For more Heroku Postgres configurations, please refer to [this documentation](https://devcenter.heroku.com/articles/heroku-postgresql)
 
-12. Create and connect Heroku database
-13. Sync local db data with heroku
-14. The exciting/~~frustrating~~ climax
+11. Sync local db data with heroku
+At first I didn't realize that I had to push my local db to Heroku in order to sync the data. I thought making migrations would be enough. 
+```heroku pg:push yourlocaldb HEROKU YOURHEROKUDB --app yourawesomeapp
+```
+
+12. The exciting/~~frustrating~~ moment
+I hope you are still with me. That was A LOT. In fact, it took me quite some time(weeks) to put everything together. This was my main motivation to write down everyhing I have leanred so maybe in future someone else won't have to go through my looooong learning process. Here we are, the moment of truth
    
