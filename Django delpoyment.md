@@ -1,3 +1,5 @@
+### The most comprehensive guide to deploy Django projects with Heroku 
+
 ### Pre-requisition: A Django project
 
 ## What you will learn:
@@ -220,12 +222,45 @@ Over the course of deploying my apps, I found and used servals heroku documentat
         'default': env.db(),
     }
     ```
-    5. Requirements.txt file
-    6. runtime.txt file
-    7. Procfile
-    8. Create a heroku app
-    9. Setting environment variables on Heroku
-    10. Create and connect Heroku database
-    11. Sync local db data with heroku
-    12. The exciting/~~frustrating~~ climax
+5. Requirements.txt file
+Another required file from Heroku. This tells Heroku the dependencies of your project. I found the easiest way to do it is to use pip:
+```
+pip freeze > requirements.txt
+```
+6. runtime.txt file
+This file tells Heroku which Python version to use. Create a runtime.txt in your root directory, and specify the Python version you'd like Heroku to use.
+```
+python-3.8.2
+```
+7. Procfile file
+This file tells Heroku the processes it should run. Use ```touch Procifile``` commant create a file in your root directory(or use GUI to create one) and copy paste this into the file:
+```
+release: python3 manage.py migrate
+web: gunicorn gettingstarted.wsgi --preload --log-file -
+```
+
+8. Create a heroku app
+The basic command is ```heroku create```, but then you will have to specify builpacks to use. So I tend to specify buildpacks while create the app.
+```
+heroku create myapp --buildpack heroku/python
+```
+
+9. Setting environment variables on Heroku
+Just as what we did for local environment, we have to set environment variables on Heroku too, so that Heroku will be able to communicate between different modules. ```heroku config:set``` commmand can be used for this purpose.
+The first one is ALLOWED_HOST:
+```heroku config:set ALLOWED_HOSTS=<YOUR_UNIQUE_URL>
+```
+Then which setting module to use:
+```heroku config:set DJANGO_SETTINGS_MODULE=gettingstarted.settings.heroku```
+And the CERECT_KEY:
+```heroku config:set SECRET_KEY=<gobbledygook>
+```
+After we have set environment variables for Django, we need to do the same for AWS S3 so that Heroku can access your static file.
+```heroku config:set AWS_ACCESS_KEY_ID=xxx AWS_SECRET_ACCESS_KEY=yyy```
+```AWS_STORAGE_BUCKET_NAME='yourawsbucketname'```
+10. Set up Heroku database
+
+12. Create and connect Heroku database
+13. Sync local db data with heroku
+14. The exciting/~~frustrating~~ climax
    
