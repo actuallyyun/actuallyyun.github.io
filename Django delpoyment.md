@@ -276,5 +276,12 @@ At first I didn't realize that I had to push my local db to Heroku in order to s
 ```
 
 12. The exciting/~~frustrating~~ moment
-I hope you are still with me. That was A LOT. In fact, it took me quite some time(weeks) to put everything together. This was my main motivation to write down everyhing I have leanred so maybe in future someone else won't have to go through my looooong learning process. Here we are, the moment of truth
+I hope you are still with me. That was A LOT. In fact, it took me quite some time(weeks on and off I shall say) to put everything together. This was my main motivation to write down everyhing I have leanred so maybe in future someone else won't have to go through my looooong learning process. Here we are, finally we are ready to deploy our apps.
+```git push heroku master```
+This is push your code to the heroku repo, and heroku will start build the app right away. 
+Once the build is finished, run this to scale up the web process:
+```heroku ps:scale web=1```
+In case you run into any problem, can always run ```heroku logs --tail``` to check the logs. 
+
+
    
