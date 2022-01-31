@@ -250,14 +250,22 @@ heroku create myapp --buildpack heroku/python
 9. Setting environment variables on Heroku
 Just as what we did for local environment, we have to set environment variables on Heroku too, so that Heroku will be able to communicate between different modules. ```heroku config:set``` commmand can be used for this purpose.
 The first one is ALLOWED_HOST:
-```heroku config:set ALLOWED_HOSTS=<YOUR_UNIQUE_URL>```
+
+```
+heroku config:set ALLOWED_HOSTS=<YOUR_UNIQUE_URL>
+```
 
 Then which setting module to use:
 
-```heroku config:set DJANGO_SETTINGS_MODULE=gettingstarted.settings.heroku```
+```
+heroku config:set DJANGO_SETTINGS_MODULE=gettingstarted.settings.heroku
+
+```
 And the SECRECT_KEY:
 
-```heroku config:set SECRET_KEY=<gobbledygook>```
+```
+heroku config:set SECRET_KEY=<gobbledygook>
+```
 
 After we have set environment variables for Django, we need to do the same for AWS S3 so that Heroku can access your static file.
 
@@ -268,11 +276,16 @@ AWS_STORAGE_BUCKET_NAME='yourawsbucketname'
 ```
 
 Another variable is the DISABLE_COLLECTSTATIC:
-```heroku config:set DISABLE_COLLECTSTATIC=1```
+```
+heroku config:set DISABLE_COLLECTSTATIC=1
+
+```
 
 10. Set up Heroku database
 First check if you have a database already.
-```heroku addons```
+```
+heroku addons
+```
 If it says no, then let's go ahead and create one.
 ```
 heroku addons:create heroku-postgresql:hobby-dev
@@ -298,13 +311,22 @@ I hope you are still with me. That was A LOT. In fact, it took me quite some tim
 Remember to check the remote repos you are in by ```git remote -v``` command.
 If heroku is not in your remote yet, you can add it:
 
-```git remote add heroku https://github.com/user/repo.git```
+```
+git remote add heroku https://github.com/user/repo.git
+```
 
 
-```git push heroku master```
+```
+git push heroku master
+```
+
 This is push your code to the heroku repo, and heroku will start build the app right away. 
 Once the build is finished, run this to scale up the web process:
-```heroku ps:scale web=1```
+
+```
+heroku ps:scale web=1
+```
+
 In case you run into any problem, can always run ```heroku logs --tail``` to check the logs. 
 
 
