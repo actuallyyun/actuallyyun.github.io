@@ -267,6 +267,9 @@ heroku config:setAWS_SECRET_ACCESS_KEY=yyy
 AWS_STORAGE_BUCKET_NAME='yourawsbucketname'
 ```
 
+Another variable is the DISABLE_COLLECTSTATIC:
+```heroku config:set DISABLE_COLLECTSTATIC=1```
+
 10. Set up Heroku database
 First check if you have a database already.
 ```heroku addons```
@@ -285,7 +288,9 @@ Setting HEROKU_POSTGRESQL_BRONZE vars and restarting sushi... done, v11
 
 11. Sync local db data with heroku
 At first I didn't realize that I had to push my local db to Heroku in order to sync the data. I thought making migrations would be enough. 
-```heroku pg:push yourlocaldb YOURHEROKUDB_URL --app yourawesomeapp
+
+```
+heroku pg:push yourlocaldb YOURHEROKUDB_URL --app yourawesomeapp
 ```
 
 12. The exciting/~~frustrating~~ moment
