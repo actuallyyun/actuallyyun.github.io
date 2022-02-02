@@ -51,3 +51,6 @@ class Command(BaseCommand):
 ```
 In your terminal, run the Django command ```python manage.py createdata```
 It should print out a random name. Mine is ```Laura Kim```
+
+Please refer to [Faker's documentation](https://faker.readthedocs.io/en/master/index.html)
+
