@@ -6,8 +6,23 @@ Let's get started!
 
 ### 01
 
-In your project app file(for example, my project file is project4, my app is commerce, do this in your app file), create a folder named ```management```, 
+In your project app file(for example, my project file is project4, my app is commerce, do this in your app file), create ```management/commands```, 
 within the folder, create a file named ```createdata.py```.
+This is what your directory should look like:
+
+```
+polls/
+    __init__.py
+    models.py
+    management/
+        __init__.py
+        commands/
+            __init__.py
+            _private.py
+            crearedata.py
+    tests.py
+    views.py
+```
 
 Let's import all the useful stuff:
 
@@ -18,9 +33,9 @@ import faker.providers
 from auctions.models import User, Listing, Bid, Comment, Watchlist
 import random
 ```
-And install faker ```pip install faker```
+And install faker ```pip install Faker```
 
-We could use faker's provider library, on top of that, we could create customed providers.
+We could use faker's provider library, on top of that, we could also create customed providers.
 
 Let's test faker first.
 
@@ -31,6 +46,8 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
 
-        fake = Faker(["nl_NL"])
-        print(fake.address())
+        fake = Faker()
+        print(fake.name())
 ```
+In your terminal, run the Django command ```python manage.py createdata```
+It should print out a random name. Mine is ```Laura Kim```
