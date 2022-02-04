@@ -165,6 +165,7 @@ export AWS_STORAGE_BUCKET_NAME='xxxxxxxxx'
 
 ```
 All the values should match your AWS account and the S3 bucket name you have just created.
+If we run ```python manage.py collectstatic```command, Django will automately collect static files and upload to the place you specified earlier with 'STATICFILES_STORAGE' variable.  
 
 ### Good job! Now we are ready to configurate our Django app for Heroku deployment.
 Over the course of deploying my apps, I found and used servals heroku documentations. The one I found that helped me the most was [this page](https://blog.heroku.com/from-project-to-productionized-python) In fact, there are quite a lot of details you have to attend in this step.
