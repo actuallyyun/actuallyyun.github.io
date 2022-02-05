@@ -332,3 +332,5 @@ In case you run into any problem, can always run ```heroku logs --tail``` to che
 
 
    
+Other userful resources on this topic
+[deploying Django app with Heroku and AWS S3](https://habr.com/en/post/535054/)
