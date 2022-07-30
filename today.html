@@ -1,0 +1,31 @@
+---
+layout: none
+description: Today's todo-list
+permalink: /OneDayAtaTime
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/today.css" />
+
+    <title>One Day At a Time</title>
+</head>
+
+<body>
+    <p>Hello, <span id="datetime"></span></p>
+    <h1>One Day At a Time</h1>
+    <form id="form">
+        <input type="text" class="input" id="input" placeholder="How would you like to spend your day?"
+            autocomplete="off">
+        <ul class="todays" id="todays"></ul>
+    </form>
+    <small>Left click to complete.<br> Right click to delete.</small>
+
+    <script src="js/today.js"></script>
+</body>
+
+</html>
