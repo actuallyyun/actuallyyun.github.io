@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Yun Ji',
-  tagline: 'Software Engineer | For The Low of Coding',
+  title: '纪云 Yun Ji',
+  tagline: 'Software Engineer | For The Love of Coding',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -56,6 +56,18 @@ const config = {
           customCss: require.resolve('./src/css/custom.css')
         }
       })
+    ]
+  ],
+  plugins: [
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 70,
+        max: 1030, // max resized image's size.
+        min: 640, // min resized image's size. if original is lower, use that size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+        disableInDev: false
+      }
     ]
   ],
 
