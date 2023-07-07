@@ -26,3 +26,14 @@
   --ifm-color-primary-lightest: #f5bffc;
   --ifm-background-color: #19191f;
 }
+
+img{
+  border-radius: 5%;
+  margin-bottom: 1rem;
+}
+
+.hero{
+  background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(174,8,196,1) 48%, rgba(252,176,69,1) 100%);
+}
+
