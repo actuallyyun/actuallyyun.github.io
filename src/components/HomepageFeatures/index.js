@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 import Image from '@theme/IdealImage'
 import yunClimbing from '/static/img/yun-climbing-mexico.jpeg'
 import yunGeekPark from '/static/img/yun-present-geekpark.jpeg'
-import yunProgramming from '/static/img/yun-present-final-project.jpg'
+import yunProgramming from '/static/img/yun-present-final-project.jpeg'
 
 const FeatureList = [
   {
