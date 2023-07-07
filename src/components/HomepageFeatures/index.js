@@ -1,52 +1,60 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import Image from '@theme/IdealImage'
+import yunClimbing from '/static/img/yun-climbing-mexico.jpeg'
+import yunGeekPark from '/static/img/yun-present-geekpark.jpeg'
+import yunProgramming from '/static/img/yun-present-final-project.jpeg'
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Tech Reporter',
+    img: yunGeekPark,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        I started my carrer as a new reporter, then followed my curiosity to the
+        booming tech industry in Beijing, I transitioned to be a tech reporter.{' '}
       </>
-    ),
+    )
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Rock Climber',
+    img: yunClimbing,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Discovering rock climbing is one of the best things that heppened to me.
+        I was hungry for adventures, and fell in love with this incredible
+        sport. So I embraced it, and set off for a journey around the globe to
+        climb and live in the dirt.
       </>
-    ),
+    )
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Programmer',
+    img: yunProgramming,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        How I wish I had studied computer science in college.However, learning
+        how much I love coding in my 30s is not too late. There's no such thing
+        as too late. When we gain something, we always loose something. I am
+        glad I found my passion in coding.
       </>
-    ),
-  },
-];
+    )
+  }
+]
 
-function Feature({Svg, title, description}) {
+function Feature({ img, title, description }) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+      <div className='text--center'>
+        <Image img={img} alt={title} />
       </div>
-      <div className="text--center padding-horiz--md">
+      <div className='text--center padding-horiz--md'>
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
     </div>
-  );
+  )
 }
 
 export default function HomepageFeatures() {
