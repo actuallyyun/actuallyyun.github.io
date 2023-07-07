@@ -19,7 +19,7 @@ function HomepageHeader() {
             className='button button--secondary button--lg'
             to='/docs/intro'
           >
-            Who Am I ?
+            Start Learning With Me
           </Link>
         </div>
       </div>
@@ -31,7 +31,7 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext()
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title} Brain Dump`}
       description='Explore a wealth of coding tips, 
       job search strategies, and tech interview tips that I learned along the way.
       Stay ahead in your software engineering career with expert insights, best practices, and practical resources on programming languages, frameworks, resume building, networking, and acing technical interviews. '

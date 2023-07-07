@@ -7,8 +7,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '纪云 Yun Ji',
-  tagline: 'Software Engineer | For The Love of Coding',
-  favicon: 'img/favicon.ico',
+  tagline: 'Coding Blog | For The Love of Programming',
+  favicon: 'img/heart-icon.svg',
 
   // Set the production url of your site here
   url: 'https://actuallyyun.github.io',
@@ -85,9 +85,19 @@ const config = {
             position: 'left',
             label: 'Learning'
           },
-          { to: '/blog', label: 'Daily Dumps', position: 'left' },
+          { to: '/blog/blog', label: 'Daily Dumps', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            to: '/docs/category/TechInterview',
+            label: 'Tech Interviews',
+            position: 'left'
+          },
+          {
+            to: '/docs/category/jobsearch',
+            label: 'Job Search',
+            position: 'left'
+          },
+          {
+            href: 'https://github.com/actuallyyun',
             label: 'GitHub',
             position: 'right'
           }
