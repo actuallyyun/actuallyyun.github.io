@@ -41,3 +41,23 @@ const alwaysSunny=(day:string,location?:string)=>{
 :::caution
 In TypeScript, optional parameter needs to be at the end of your parameter list.
 :::
+
+One cool and very useful feature is the **rest parameter**.
+
+Imagine you don't know how many arguments are going to be passed to a function, you could potentially save all arguments to an array and then pass the array. But there's a better way to do it.
+
+```
+const sum(...numbers)=>{
+    return numbers.reduce((total,n)=>total+n,0)
+}
+```
+
+`sum() // zero parameter returns 0`
+
+`sum(1)  // returns 1`
+
+`sum(1,2,3) //returns 6`
+
+:::tip
+To make it type safe, you could simplly annotate the parameter type `...numbers:numbers[]`
+:::
