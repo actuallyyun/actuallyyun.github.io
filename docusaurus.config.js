@@ -87,12 +87,12 @@ const config = {
           },
           { to: '/blog/blog', label: 'Daily Dumps', position: 'left' },
           {
-            to: '/docs/category/TechInterview',
+            to: '/docs/category/tech-interview',
             label: 'Tech Interviews',
             position: 'left'
           },
           {
-            to: '/docs/category/jobsearch',
+            to: '/docs/category/job-search',
             label: 'Job Search',
             position: 'left'
           },
