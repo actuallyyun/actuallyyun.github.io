@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkyun=self.webpackChunkyun||[]).push([[4121],{8070:e=>{e.exports=JSON.parse('[{"label":"Python","permalink":"/docs/tags/python","count":2},{"label":"Django","permalink":"/docs/tags/django","count":2},{"label":"Shell","permalink":"/docs/tags/shell","count":1}]')}}]);

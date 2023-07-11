@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkyun=self.webpackChunkyun||[]).push([[1713],{3457:u=>{u.exports=JSON.parse('[{"label":"blog","permalink":"/blog/tags/blog","count":2},{"label":"docusaurus","permalink":"/blog/tags/docusaurus","count":2}]')}}]);

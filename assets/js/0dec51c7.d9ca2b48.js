@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkyun=self.webpackChunkyun||[]).push([[6158],{2643:e=>{e.exports=JSON.parse('{"label":"Shell","permalink":"/docs/tags/shell","allTagsPath":"/docs/tags","count":1,"items":[{"id":"python/python-shell","title":"How to use python shell in terminal","description":"I use ipython:","permalink":"/docs/python/python-shell"}]}')}}]);
