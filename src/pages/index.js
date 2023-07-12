@@ -16,7 +16,7 @@ function HomepageHeader() {
         <div className={styles.intro}>
           <h1 className={styles.h1}>{siteConfig.title}</h1>
           <p className={styles.text}>
-            Passionate software enginner and rock climber with a love for
+            Passionate software engineer and rock climber with a love for
             writing and sharing. A helpless learning addict.
           </p>
           <div>
