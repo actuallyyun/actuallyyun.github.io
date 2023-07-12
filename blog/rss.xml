@@ -4,10 +4,17 @@
         <title>纪云 Yun Ji Blog</title>
         <link>https://actuallyyun.github.io/blog</link>
         <description>纪云 Yun Ji Blog</description>
-        <lastBuildDate>Fri, 07 Jul 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 11 Jul 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <link>https://actuallyyun.github.io/blog/2023/07/11/</link>
+            <guid>https://actuallyyun.github.io/blog/2023/07/11/</guid>
+            <pubDate>Tue, 11 Jul 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[test]]></description>
+            <content:encoded><![CDATA[<p>test</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[I think docusaurus is the best solution to coding blogs]]></title>
             <link>https://actuallyyun.github.io/blog/second-day-using-docusaurus</link>
