@@ -13,6 +13,9 @@
   --ifm-color-primary-light: #bf09d8;
   --ifm-color-primary-lighter: #c809e1;
   --ifm-color-primary-lightest: #db14f5;
+  --background-color-cream:#f9f6ec;
+  --text-color-dark:#161616;
+  --text-color-gray:rgba(0,0,0,.7);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -32,8 +35,14 @@ img{
   margin-bottom: 1rem;
 }
 
-.hero{
+/*.hero{
   background: rgb(131,58,180);
 background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(174,8,196,1) 48%, rgba(252,176,69,1) 100%);
-}
+}*/
 
+.hero{
+  background-image: url('/static/img/moonhill.webp');
+  background-size: cover;
+  background-position: center center;
+
+}
