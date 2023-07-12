@@ -32,6 +32,9 @@
   --ifm-color-primary-lighter: #ee8efa;
   --ifm-color-primary-lightest: #f5bffc;
   --ifm-background-color: #19191f;
+  --text-color-gray:#f9f6ec;
+  --text-color-dark:#fff;
+  --background-color-cream:#002a3a;
 }
 
 img{
