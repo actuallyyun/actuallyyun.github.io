@@ -78,7 +78,8 @@
 
 .button:hover{
   background-color:var(--text-color-dark);
-  color: #fff;
+  color:var(--ifm-color-primary);
   border-color: var(--text-color-dark);
   opacity: .8;
+  text-decoration: none;
 }
