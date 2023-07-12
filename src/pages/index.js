@@ -17,7 +17,8 @@ function HomepageHeader() {
           <h1 className={styles.h1}>{siteConfig.title}</h1>
           <p className={styles.text}>
             Passionate software engineer and rock climber with a love for
-            writing and sharing. A helpless learning addict.
+            writing and sharing. A helpless learning addict. Born and raised in
+            China, currently living between Spain and Finland.
           </p>
           <div>
             <Link className={styles.button} to='/docs/intro'>
