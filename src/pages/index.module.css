@@ -4,11 +4,12 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 4rem 4rem;
   text-align: center;
   position: relative;
   overflow: hidden;
-}
+  height: 600px;
+  }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
@@ -20,4 +21,64 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.introWrapper{
+  max-width: 80%;
+  text-align: left;
+  background-color:var(--background-color-cream) ;
+  padding: 40px 48px;
+  min-height: 320px;
+  display: flex;
+}
+
+@media screen and (min-width: 756px) {
+  .introWrapper {
+    max-width: 60%;
+  }
+}
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.h1{
+  font-family: Work Sans,sans-serif;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  line-height: 120%;
+  color: var(--text-color-dark);
+}
+
+.text{
+  color:var(--text-color-gray);
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: .01em;
+}
+
+.button{
+  font-size: 15px;
+  color: var(--text-color-dark);
+  border: 1px solid #002a3a;
+  border-radius: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  padding: 0.85em 20px;
+  text-decoration: none;
+  transition: all .3s cubic-bezier(.19,1,.22,1);
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.button:hover{
+  background-color:var(--text-color-dark);
+  color: #fff;
+  border-color: var(--text-color-dark);
+  opacity: .8;
 }
