@@ -4,16 +4,18 @@
         <title>纪云 Yun Ji Blog</title>
         <link>https://actuallyyun.github.io/blog</link>
         <description>纪云 Yun Ji Blog</description>
-        <lastBuildDate>Tue, 11 Jul 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 12 Jul 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <link>https://actuallyyun.github.io/blog/2023/07/11/</link>
-            <guid>https://actuallyyun.github.io/blog/2023/07/11/</guid>
-            <pubDate>Tue, 11 Jul 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[test]]></description>
-            <content:encoded><![CDATA[<p>test</p>]]></content:encoded>
+            <title><![CDATA[The Industry Will Eat You And Spit You Out]]></title>
+            <link>https://actuallyyun.github.io/blog/horrendous-job-search</link>
+            <guid>https://actuallyyun.github.io/blog/horrendous-job-search</guid>
+            <pubDate>Wed, 12 Jul 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Yesterday the recuiter from Datadog called me and delivered the rejection after I completed all the interview rounds.]]></description>
+            <content:encoded><![CDATA[<p>Yesterday the recuiter from Datadog called me and delivered the rejection after I completed all the interview rounds. </p><p>She said the team choosed another candidate because that person has a more suitable tech stack. </p><p>I felt bumped but not surprised. It had been 10ish days since the final round of interview. Normally if they don't get back to you within a week, generally means they choosed someone elese.</p><p>The hiring season for new grads is pretty much over, and I am still jobless. I kept sending resumes when I saw suitable positons, but to be honest, there aren't many for juniors. Most applications did not get any response, not even a rejection email. They were eaten by the industry.</p><p>Yesterday I listened to <a href="https://www.freecodecamp.org/news/from-high-school-english-teacher-to-software-engineer-at-a-machine-learning-company/" target="_blank" rel="noopener noreferrer">an old podcast from freeCodeCamp</a> about a high school English teacher's experience breaking into tech. That was four years ago and he described the job search as <em>horrendous</em>. In fact, he nearly gave up when he was rejected by a job he felt over qualified for. </p><p>But of course, he made it, otherwise he would've not been on the podcast. We love success stories, and hope to get motivated by it. It seems like most people went through a hard time finding their first job but eventualky they maneged to do it. I wonder how big of a role survivorship bias plays in this picture. </p><p>It was 99% luck. He went to a freecodecamp meetup, randomly talked a guy who happened to be the CEO of a company that happens to need a React developer. </p><p>And that's it. After hundreds and hundreds of applications being eaten by the industry, he got lucky, and the industry let him pass through. </p><p>My luck was in May when someone I have never met referred me to her company for a software engineer 1 position. I got an interview, did well in the interview, then it came the offer. However I did not get the job because I do not have work permit. That guy in the story did not have to worry about work permit because he is a Brit working in Austrilia. First world citizens don't ever have to worry about work permit in the first world. Everyone on the xiaohongshu who is trying to break into tech has to go through this first huge hurdle. </p><p>I did not. And it still hurts.</p><p>I should have known better before I decided to pay the Spanish university for a master's degree. They want your money but won't give you right to work here. It is tremendously diffcult to conver study permit to work permit in Spain(and in most EU countries so I have heard). </p><p>I should have married someone. That was the advice from Chinese who made it. It seems, the only way to access work right is by marriage, or pareja de hecho in Spain. That makes you one of them because you are one of their's family member. </p><p>This idea made me sick.</p><p>Living in a society where all the doors are closed, and trying to break into an industry that is savage, I sure have the challenge I wished for.</p><p>I want to remember this moment of down, feel the rock bottom and see what it makes of me. </p><p>Am I able to do something about it? Let's see.</p>]]></content:encoded>
+            <category>job</category>
         </item>
         <item>
             <title><![CDATA[I think docusaurus is the best solution to coding blogs]]></title>

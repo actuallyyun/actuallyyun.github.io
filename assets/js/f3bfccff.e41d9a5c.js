@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkyun=self.webpackChunkyun||[]).push([[7801],{3285:a=>{a.exports=JSON.parse('{"label":"job","permalink":"/blog/tags/job","allTagsPath":"/blog/tags","count":1}')}}]);
