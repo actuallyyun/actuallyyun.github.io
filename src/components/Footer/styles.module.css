@@ -1,0 +1,38 @@
+.gridRow{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 48px 80px;
+    text-align: center;
+  
+} 
+
+.title{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0;
+    margin-bottom: 16px;
+    margin-top:16px;
+  }
+  
+  .text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .025em;
+    margin-bottom: 16px;
+    color:var(--text-color-gray);
+  }
+
+  .footer {
+    
+    align-items: center;
+    padding: 2rem 2rem;
+    width: 100%;
+
+  }
+
+  .center{
+    text-align: center;
+    padding: 2rem 2rem;
+  }
