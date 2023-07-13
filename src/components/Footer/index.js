@@ -35,8 +35,8 @@ const FooterElement = ({ category, items }) => {
       <p className={styles.title}>{category}</p>
       <div>
         {items.map((item, index) => (
-          <ul key={index}>
-            <li>
+          <ul key={index} className={styles.list}>
+            <li className={styles.list}>
               <a href={item.link} className={styles.text}>
                 {item.name}
               </a>
