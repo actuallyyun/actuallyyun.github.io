@@ -6,25 +6,28 @@ const footerList = [
   {
     category: 'Yun Ji',
     items: [
-      { name: 'About', link: '/about' },
-      { name: 'Contact', link: '/contact' },
+      { name: 'About', link: '/' },
+      { name: 'Contact', link: '/' },
       { name: 'Blog', link: '/blog' }
     ]
   },
   {
     category: 'Writing',
     items: [
-      { name: 'Coding', link: '/coding' },
-      { name: 'Tech Interviews', link: '/' },
-      { name: 'Job Search', link: '/' }
+      { name: 'Coding', link: '/docs/intro' },
+      { name: 'Tech Interviews', link: '/docs/category/tech-interview' },
+      { name: 'Job Search', link: '/docs/category/job-search' }
     ]
   },
   {
     category: 'Social',
     items: [
-      { name: 'Twitter', link: '/' },
-      { name: 'Instagram', link: '/' },
-      { name: '小红书', link: '/' }
+      { name: 'LinkedIn', link: 'https://www.linkedin.com/in/yun-ji/' },
+      { name: 'Instagram', link: 'https://www.instagram.com/actuallyyun/' },
+      {
+        name: '小红书',
+        link: 'https://www.xiaohongshu.com/user/profile/62dd28ee000000001e01d804'
+      }
     ]
   }
 ]
@@ -37,7 +40,7 @@ const FooterElement = ({ category, items }) => {
         {items.map((item, index) => (
           <ul key={index} className={styles.list}>
             <li className={styles.list}>
-              <a href={item.link} className={styles.text}>
+              <a href={item.link} className={styles.text} target='_blank'>
                 {item.name}
               </a>
             </li>
