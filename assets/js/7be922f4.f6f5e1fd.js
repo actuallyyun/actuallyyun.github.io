@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkyun=self.webpackChunkyun||[]).push([[9348],{10:s=>{s.exports=JSON.parse('{"label":"Finnish","permalink":"/blog/tags/finnish","allTagsPath":"/blog/tags","count":1}')}}]);
