@@ -1,20 +1,14 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 2rem;
+  padding: 14px 0px;
   width: 100%;
 }
 
-@media screen and (min-width: 996px) {
-  .features {
-    padding: 4rem 4rem;
-  }
-}
+
 
 .gridRow{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 48px 80px;
 
 }
 
@@ -51,4 +45,25 @@
   color:var(--text-color-gray);
   font-style: italic;
   
+}
+
+/*Medium Screen*/
+@media screen and (min-width: 756px) {
+  .gridRow{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 48px 80px;
+  
+  }
+
+  .features{
+    padding: 2rem 2rem;
+
+  }
+}
+
+@media screen and (min-width: 996px) {
+  .features {
+    padding: 4rem 4rem;
+  }
 }
