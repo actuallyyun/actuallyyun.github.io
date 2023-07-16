@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkyun=self.webpackChunkyun||[]).push([[9820],{5444:s=>{s.exports=JSON.parse('{"label":"CS","permalink":"/docs/tags/cs","allTagsPath":"/docs/tags","count":1,"items":[{"id":"study-cs/univeristy-of-oulu","title":"University of Oulu\'s CS Bachelor Program","description":"Pros","permalink":"/docs/study-cs/univeristy-of-oulu"}]}')}}]);
