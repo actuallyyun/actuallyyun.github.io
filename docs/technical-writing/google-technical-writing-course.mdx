@@ -1,0 +1,244 @@
+---
+id: google-technical-writing-course-notes
+title: Notes | Google Technical Writing Course
+tags:
+  - CS
+  - Technical Writing
+keywords: [coding,computer science,bootcamp,university,finland,oulu]
+last_update: 
+    date: 2023-08-17
+    author: Yun Ji
+---
+
+import strongVerbs from '/static/img/strong-verbs-example.png'
+import Image from '@theme/IdealImage'
+
+## Use the acronym > the full term
+
+- [ ] The acronym is much shorter
+- [ ] The acronym appears many times. Heavily used acronyms develop their own identity.
+
+Example:
+
+> Jeff Dean invented MapReduce in 1693, implementing the algorithm on a silicon-based computer fabricated from beach sand, wax-paper, a quill pen, and a toaster oven. This version of MR held several world performance records until 2014.
+
+Jeff Dean invented MapReduce in 1693, implementing the algorithm on a silicon-based computer fabricated from beach sand, wax-paper, a quill pen, and a toaster oven. This version of MapReduce held several world performance records until 2014.
+
+### How to introduce an acronym?
+
+Spell out the full term and put the acronym in parentheses.
+
+> This document is for engineers who are new to the Telekinetic Tactile Network (TTN) or need to understand how to order TTN replacement parts through finger motions.
+
+
+
+## Be careful with ambiguous pronouns
+
+*Exercise*
+
+Identify all possible meanings for the ambiguous pronouns in each of the following passages:
+
+*Aparna and Phil share responsibilities with Maysam and Karan and they are next on call.*
+Aparna and Phil share responsibilities with Maysam and Karan. Aparana and Phil are next on call.
+
+Aparna and Phil share responsibilities with Maysam and Karan. Maysam and Karan are next on call.
+
+Aparna and Phil share responsibilities with Maysam and Karan. All of the four are next on call.
+
+*You may import Carambola data via your configuration file or dynamically at run time. This may be a security risk.*
+
+Importing Carambola data via your configuration file may be a security risk.
+
+Importing Carambola data dynamically at run time may be a security risk.
+
+Both importing options may be a security risk.
+
+
+## Choose strong verbs
+
+<Image img={strongVerbs}/>
+
+*Exercise*
+
+Clarify the following sentences by picking more specific verbs. Along the way, feel free to rearrange the sentences and to add, modify, or delete words:
+
+*When a variable declaration doesn't have a datatype, a compiler error happens.*
+
+My attempt: 
+
+When you declare a variable without a datatype, a compiler throws an error.
+
+Answer:
+- When a variable declaration doesn't specify a datatype, the complier generates an error message.
+- If you declare a variable without specifying a datatype, the complier generates an error message.
+
+*Compiler errors occur when you leave off a semicolon at the end of a statement.*
+
+My attempt:
+
+When you miss a semicolon at the end of a statement, the compiler throws errors.
+
+Answers:
+
+- A missing semicolon at the end of a statement triggers complier errors.
+
+- Compliers issue errors when you omit a semicolon at the end of the statement.
+
+
+:::tip
+Collect verbs that can be used with errors.
+:::
+
+## Avoid the generic couple (there is / there are)
+
+*Exercise*
+
+Clarify the following sentences by removing There is, and possibly rearranging, adding, modifying, or deleting other words:
+
+*There is a lot of overlap between X and Y.*
+
+X and Y overlaps significantly.
+
+*There is no creator stack for the main thread.*
+
+The main thread does not *include*(provide) the creator stack.
+
+*There is a low-level, TensorFlow, Python interface to load a saved model.*
+
+The low-level Python interface-TensorFlow-can load a saved model.
+
+
+TensorFlow provides a low-level Python interface to load a saved model.
+
+*There is a sharding function named `distribute` that assigns keys.*
+
+A sharding function named `distribute` assigns keys.
+The `distribute` shading function assigns keys.
+
+## Don't confuse marketing writing with educational material
+
+Setting this flag makes the application run **screamingly** fast.
+
+Setting this flag makes the application run **225-250%** faster.
+
+
+## One sentence does one thing, just like functions in code
+
+*Exercise*
+
+Convert the following overly long sentence to a series of shorter sentences. Don't revise too much; just end up with a few sentences instead of only one.
+
+In bash, use the if, then, and fi statements to implement a simple conditional branching block in which the if statement evaluates an expression, the then statement introduces a block of statements to run when the if expression is true, and the fi statement marks the end of the conditional branching block.
+
+In bash, use the `if then fi` statements to implement a simple conditions branching block. The `if` statement evaluates an expression. The `then` statement introduces a block of statements to run when the `if` expression is true. The `fi` statement marks the end of the conditional branching block. 
+
+## A list is yearning to break free
+
+*Exercise*
+
+Refactor the following sentences into something shorter and clearer. Make sure that your answer contains a list:
+
+To get started with the Frambus app, you must first find the app at a suitable store, pay for it using a valid credit or debit card, download it, configure it by assigning a value for the Foo variable in the /etc/Frambus file, and then run it by saying the magic word twice.
+
+To get started with the Frambus app, you should:
++ Take the following steps to get started with the Frambus app:
+
+
+1. Find the app at your app store
+2. Pay using a valid credit or debit card and download it
+3. Navigate to the `/etc/Frambus` file
+4. Assign a value to the `Foo` variable
+5. Say the magic word twice to run it. (Run the app by saying the magic word twice)
+
+
+KornShell was invented by David Korn in 1983, then a computer scientist at Bell Labs, as a superset of features, enhancements, and improvements over the Bourne Shell (which it was backwards compatible with), which was invented by Stephen Bourne in 1977 who was also a computer scientist at Bell Labs.
+
+- KornShell was invented by David Korn in 1983.He was working as a computer scientist at Bell Labs.
+- He invented it as a superset of features, enhancements and improvements over the Bourne Shell.
+- KornShell was backwards compatible with Bourne Shell.
+- Bourne Shell was invented by Stephen Bourne in 1977. He was also a computer scientist at Bell Labs.  
+
+**Answer**
+
+The following two Bell Labs computer scientists invented popular shells:
+
+- Stephen Bourne invented the Bourne Shell in 1977.
+- David Korn invented the KornShell in 1983.
+
+The KornShell is a backwards-compatible superset of the Bourne Shell, containing many improvements over the older shell.
+
+## Eliminate extraneous words
+
+
+*Exercise*
+
+Shorten the following sentences without changing their meaning:
+
+*In spite of the fact that Arnold writes buggy code, he writes error-free documentation.*
+
+Though Arnold writes buggy code, he writes error-free documentation.
+
+*Changing the sentence from passive voice to active voice enhances the clarification of the key points.*
+
+Changing the sentence from passive voice to active voice clarifies the key points.
+
+*Determine whether Rikona is able to write code in COBOL.*
+
+Can Rikona ~~write~~ code in COBOL?
+
+*Frambus causes the production of bugs, which will be chronicled in logs by the LogGenerator method.*
+
+~~The bugs produced by Frambus are logged chronically by the `LogGenerator` method.~~
+
+Frambus produces bugs, which the ``LogGenerator`` method logs .
+
+
+## Scrutinize subordinate clauses
+
+*Exercise*
+
+Determine which of the sentences contain subordinate clauses that should be branched off into separate sentences. (Don't rewrite the sentences, just identify the sentences that should be rewritten.)
+
+*Python is an interpreted language, which means that the language can execute source code directly.*
+
+~~Python is an interpreted language. It can execute source code directly.~~
+
+*Bash is a modern shell scripting language that takes many of its features from KornShell 88, which was developed at Bell Labs.*
+ 
+Bash is a modern shell scripting language that takes many of its features from KornShell 88. KornShell 88 was developed at Bell Labs. 
+
+*Lisp is a programming language that relies on Polish prefix notation, which is one of the systems invented by the Polish logician Jan Łukasiewicz.*
+
+Lisp is a programming language that relies on Polish prefix notation. Lisp is one of the systems invented by the Polish logician Jan Łukasiewicz.
+
+*I don't want to say that Fortran is old, but only radiocarbon dating can determine its true age*
+
+~~Only radiocarbon dating can determine the true age of Fortran.~~
+
+## Useful piece of English grammar: that vs. which
+
+**that** is used for essential subordinate clauses. **which** is used for nonessential ones.
+
+*Python is an interpreted language, **which** Guido van Rossum invented.*
+
+*Fortran is perfect for mathematical calculations **that** don't involve linear algebra.*
+
+## Choose the right type of list
+
+*Exercise*
+
+Convert the following paragraph into one or more lists:
+
+Today at work, I have to code three unit tests, write a design document, and review Janet's latest document. After work, I have to wash my car without using any water and then dry it without using any towels.
+
+Today's todo:
+
+**Work**
+- Code three unit tests
+- Write a design document
+- Review Janet's latest document
+
+**After work**
+
+1. Wash my car without using any water
+2. Dry it without using any towels
