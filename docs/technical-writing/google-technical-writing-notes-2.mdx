@@ -1,0 +1,192 @@
+---
+id: google-technical-writing-course-notes-1-part-2
+title: Notes | Google Technical Writing Course One (2/2)
+tags:
+  - CS
+  - Technical Writing
+keywords: [coding,computer science,bootcamp,university,finland,oulu]
+last_update: 
+    date: 2023-08-18
+    author: Yun Ji
+---
+
+import strongVerbs from '/static/img/strong-verbs-example.png'
+import Image from '@theme/IdealImage'
+
+## Start numbered list items with imperative verbs
+
+*Exercise*
+
+Make the following list parallel. Ensure that each element in the result list begins with an imperative verb:
+
+*1. Stop Frambus*
+
+*2. The key configuration file is /etc/frambus. Open this file with an ASCII text editor.*
+
+*3. In this file, you will see a parameter named Carambola, which is currently set to the default value (32). Change this value to 64.*
+
+*4. When you are finished setting this parameter, save and close the configuration file
+now, start Frambus again.*
+
+
+1. Stop Frambus.
+2. Open the key configuration file ~~in the~~ `/etc/frambus` ~~directory~~ with an ASCII text editor.
+
+~~3. Find the parameter named `Carambola`, which is currently set to the default value (32).~~
+
+~~4. Change the value of `Carambola` to 64~~
+
+3. Change the Caramoba parameter to from its default value(32) to 64.
+5. Save and close the configuration file.
+6. Restart Frambus.
+
+:::note
+If the list item is a sentence, use sentence punctuation(capitalization,punctuation). Otherwise, use lowercase without punctuation.
+:::
+
+## Paragraphs
+
+:::tip
+The work of writing is simply this: untangling the dependencies among the parts of a topic, and presenting those parts in a logical stream that enables the reader to understand you.
+:::
+
+### One paragraph, one idea
+
+*Exercise*
+
+
+Remove the extraneous sentence(s) from the following paragraph. Assume that the opening sentence does establish the desired theme for the paragraph:
+
+Spreadsheets provide a great way to organize data. 
+Think of a spreadsheet as a table with rows and columns. 
+~~Spreadsheets also provide mathematical functions, 
+such as means and standard deviations.~~
+Each row holds details about one entity. 
+Each column holds details about a particular parameter. 
+For example, you can create a spreadsheet to organize data 
+about different trees. Each row would represent a different 
+type of tree. Each column would represent a different 
+characteristic, such as the tree's height or the tree's spread.
+
+
+### Know what your audience knows and doesn't know
+
+:::tip
+good documentation = knowledge and skills your audience needs to do a task − your audience's current knowledge and skills
+:::
+
+### Sample audience analysis
+
+```
+The target audience for Project Zylmon falls into the following roles:
+
+software engineers
+technical product managers
+The target audience has the following proximity to the knowledge:
+
+My target audience already knows the Zyljeune APIs, which are somewhat similar to the Zylmon APIs.
+My target audience knows C++, but has not typically built C++ programs in the new Winged Victory development environment.
+My target audience took linear algebra in university, but many members of the team need a refresher on matrix multiplication.
+```
+
+:::tip
+From the novice's point of view, the curse of knowledge is a "File not found" linker error due to a module not yet compiled.
+:::
+
+
+*Exercise*
+
+1. Assume that the following paragraph is the start of a paper aimed at physicians who have never programmed before. Identify the aspects of the paragraph that suffer from the curse of knowledge:
+
+> C is a mid-level language, higher than assembly 
+language but lower than Python and Java. The C 
+language provides programmers fine-grained control 
+over all aspects of a program. For example, using 
+the C Standard Library, it is easy to allocate and 
+free blocks of memory. In C, manipulating pointers directly is mundane.
+
+- assembly languge(what is it?)
+- allocate and free blocks of memory(how does memory work in computers?)
+- pointers(what are they?)
+- Python and Java(what are the characteristics of these languages?)
+
+
+2. Suppose the preceding paragraph was aimed at undergraduate computer science 
+students new to C but comfortable with Python. Does the paragraph still suffer 
+from the curse of knowledge?
+
+~~Nope~~
+
+Yes because the average Python programmer is unaware of manipulating memory or pointers.
+A better introductory paragraph would compare and contract C with Python.
+
+
+## Write a good document
+
+### 1. Define the scope and non-scope of the project
+
+> This document describes the design of Project Frambus.This document does not describe the design for the related technology, Project Froobus.
+
+*Exercise*
+
+What problem do you see in the following paragraph?
+
+> This document explains how to use the Frambus API to create, update, and publish Fwidgets. This document does not explain how to use the Frambus API to delete Fwidgets or cover the history of the Linux operating system.
+
+~~The above paragraph is confusing because it does not explain why it covers 
+some scope of the Frambus API and not other scope. Besides, mentioning the historyof the Linuxo
+operating system is irrelevant to the Frambus API.~~
+
+The non-scope should only include information that users would reasonably expect
+the document to cover. No reasonable reader would expect the 
+document to cover the history of the Linux operating system.
+
+### 2. State your audience
+
+- the role(sdes,program managers)
+- prerequisite knowledge(matrix multiplication, C++)
+
+## Punctuation
+
+### Commas
+
+*Exercise*
+
+Add commas where appropriate to the following passage:
+
+Protocol Buffers**,** sometimes known as protobufs, are our team's main structured data format. 
+Use Protocol Buffers to represent**,** store, and transfer structured data. 
+Unlike XML, Protocol Buffers are compiled. Consequently, clients 
+transmit Protocol Buffers efficiently, which has led to rapid adoption.
+
+Hint: Read the passage aloud and put a comma everywhere you hear a short pause.
+
+### Semicolons
+
+Use it to unit highly related thoughts.
+
+*Exercise*
+
+Which of the following periods or commas could you replace with a semicolon?
+
+> Python is a popular programming language. The C language was developed long before Python.
+
+No.
+
+> Model learning for a low value of X appears in the top illustration. 
+Model learning for a high value of X appears in the bottom illustration.
+
+Yes.
+
+> I'm thankful for my large monitor, powerful CPU, and blazing bandwidth.
+
+No.
+
+### Em dashes
+
+> Protocol Buffers—often nicknamed protobufs—encode structured data in an efficient yet extensible format.
+
+:::note
+Could we have used commas instead of em dashes in the preceding examples? Sure. Why did we choose an em dash instead of a comma? Feel. Art. Experience.
+:::
+
