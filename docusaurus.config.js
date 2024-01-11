@@ -92,8 +92,8 @@ const config = {
             position: 'left'
           },
           {
-            to: '/docs/category/job-search',
-            label: 'Job Search',
+            to: '/docs/category/chinese-writing',
+            label: '中文作品集',
             position: 'left'
           },
           {
