@@ -87,11 +87,6 @@ const config = {
           },
           { to: '/blog', label: 'Daily Dumps', position: 'left' },
           {
-            to: '/docs/category/tech-interview',
-            label: 'Tech Interviews',
-            position: 'left'
-          },
-          {
             to: '/docs/category/chinese-writing',
             label: '中文作品集',
             position: 'left'
