@@ -2,35 +2,7 @@ import React from 'react'
 import styles from './styles.module.css'
 import HeartIcon from '/static/img/heart-icon.svg'
 
-const footerList = [
-  {
-    category: 'Yun Ji',
-    items: [
-      { name: 'About', link: '/' },
-      { name: 'Contact', link: '/' },
-      { name: 'Blog', link: '/blog' }
-    ]
-  },
-  {
-    category: 'Writing',
-    items: [
-      { name: 'Coding', link: '/docs/intro' },
-      { name: 'Tech Interviews', link: '/docs/category/tech-interview' },
-      { name: 'Job Search', link: '/docs/category/job-search' }
-    ]
-  },
-  {
-    category: 'Social',
-    items: [
-      { name: 'LinkedIn', link: 'https://www.linkedin.com/in/yun-ji/' },
-      { name: 'Instagram', link: 'https://www.instagram.com/actuallyyun/' },
-      {
-        name: '小红书',
-        link: 'https://www.xiaohongshu.com/user/profile/62dd28ee000000001e01d804'
-      }
-    ]
-  }
-]
+const footerList = []
 
 const FooterElement = ({ category, items }) => {
   return (
