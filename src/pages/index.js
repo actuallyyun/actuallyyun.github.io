@@ -16,9 +16,9 @@ function HomepageHeader() {
         <div className={styles.intro}>
           <h1 className={styles.h1}>{siteConfig.title}</h1>
           <p className={styles.text}>
-            Passionate software engineer and rock climber with a love for
-            writing and sharing. A helpless learning addict. Born and raised in
-            China, currently living between Spain and Finland.
+            Passionate software developer and rock climber with a love for
+            writing and sharing. A growth-minded learning addict. Always seeking
+            challenges to expand my horizon.
           </p>
           <div>
             <Link className={styles.button} to='/docs/intro'>
@@ -35,7 +35,7 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext()
   return (
     <Layout
-      title={`${siteConfig.title} Brain Dump`}
+      title={`${siteConfig.title}`}
       description='Explore a wealth of coding tips, 
       job search strategies, and tech interview tips that I learned along the way.
       Stay ahead in your software engineering career with expert insights, best practices, and practical resources on programming languages, frameworks, resume building, networking, and acing technical interviews. '
