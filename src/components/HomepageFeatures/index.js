@@ -7,6 +7,7 @@ import yunClimbingSpain from '/static/img/yun-climbing-spain.jpeg'
 import reactagonia from '/static/img/catagonia.png'
 import catgonia from '/static/img/cat.png'
 import cherryTomatoes from '/static/img/dreadfulCherryTomatoes.png'
+import wc from '/static/img/wc.png'
 
 const FeatureList = [
   {
@@ -16,15 +17,15 @@ const FeatureList = [
     description: (
       <>
         <p>
-          I started my carrer as a news reporter, then followed my curiosity to
-          the booming tech industry in Beijing and transitioned to be a tech
-          reporter.
+          I began my career as a news reporter, then followed my curiosity into
+          the booming tech industry in Beijing, transitioning to a tech reporter
+          role.
         </p>
         <p>
-          My work inclued covered breaking news in the tech industry, e.g.,
-          Tesla's expansion in China and developments in Uber; Reported on
-          emerging startups that later achieved global success, such as
-          ByteDance(TikTok).
+          My work included covering breaking news in the tech world, such as
+          Tesla's expansion in China and developments at Uber. I also reported
+          on emerging startups that later achieved global success, like
+          ByteDance (TikTok).
         </p>
         This experience gave me a deep understanding of the tech industry and
         shaped me into a storyteller through writing.
@@ -52,12 +53,17 @@ const FeatureList = [
     alt: 'Yun presenting her final project at MigraCode Barcelona cc:@MigraCode',
     description: (
       <>
-        I often wish I had studied computer science at university, but very few
-        women from my background ever considered that possibility. I am grateful
-        for the journey journalism has taken me on, and I am fully committed to
-        my transition into software development. With two major training
-        programs, motivated self-education, and experience in open-source work,
-        I am eager to continue learning in a professional environment.
+        <p>
+          I often wish I had studied computer science at university, but very
+          few women from my background ever considered that possibility.
+        </p>
+        <p>
+          I am grateful for the journey journalism has taken me on, and I am
+          fully committed to my transition into software development. With two
+          major training programs, motivated self-education, and experience in
+          open-source work, I am eager to continue learning in a professional
+          environment.
+        </p>
       </>
     ),
     link: 'https://github.com/actuallyyun'
@@ -66,20 +72,28 @@ const FeatureList = [
 
 const WorkList = [
   {
-    title: 'Reactagonia',
+    title: 'Reactagonia(TypeScript,React)',
     img: reactagonia,
-    alt: 'A solid React ecommerce web app built with TypeScript',
+    alt: 'A comprehensive ecommerce web app',
     description: <>Score 4.5/5 of overall project performance.</>,
     link: 'https://github.com/actuallyyun/reactagonia',
     linkDes: 'Source Code'
   },
   {
-    title: 'Dreadful Cherry Tomatoes',
+    title: 'Dreadful Cherry Tomatoes(React)',
     img: cherryTomatoes,
-    alt: 'A coding challenge from an innovative recuiting firm- Rviewr.',
+    alt: 'Helping people discover the latest blockbuster movies.',
     description: (
       <>
-        Scored 4/5 in code quality, 4/5 in maintainability and 5/5 in testing.
+        <p>
+          Scored 4/5 in code quality, 4/5 in maintainability and 5/5 in testing.
+        </p>
+        <a
+          href='https://blog.stackademic.com/how-to-extract-state-logic-in-react-using-a-custom-hook-815f862b9e78?sk=dd3261048149750755fc657a313db8f0'
+          target='_blank'
+        >
+          Blog:How to Extract State Logic in React Using a Custom Hook?
+        </a>
       </>
     ),
     link: 'https://github.com/actuallyyun/Rviewer-coding-challenge-cherry-tomatoes'
@@ -90,6 +104,26 @@ const WorkList = [
     alt: 'A static copy of Patagonia homepage.',
     description: <>Responsive, accessible, and maintainable.</>,
     link: 'https://github.com/actuallyyun/catagonia'
+  },
+  {
+    title: 'ccwc(Python)',
+    img: wc,
+    alt: 'My version of wc command line tool.',
+    description: (
+      <>
+        <p>
+          The best way to learn to code is to build real-life software and
+          document the process.
+        </p>
+        <a
+          href='https://github.com/actuallyyun/coding_challenges_john_crickett/blob/main/00_ccwc/COMMENTS.md'
+          target='_blank'
+        >
+          The process : build your own Unix wc tool{' '}
+        </a>
+      </>
+    ),
+    link: 'https://github.com/actuallyyun/coding_challenges_john_crickett/blob/main/00_ccwc/ccwc.py'
   }
 ]
 
@@ -110,18 +144,19 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className='container'>
-        <h1 className={styles.header}>My Journey to Software Development</h1>
-        <div className={styles.gridRow}>
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
         <h1 className={styles.header}>Work I am proud of</h1>
         <div className={styles.gridRow}>
           {WorkList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>
+        <h1 className={styles.header}>My Journey to Software Development</h1>
+        <div className={styles.gridRow}>
+          {FeatureList.map((props, idx) => (
+            <Feature key={idx} {...props} />
+          ))}
+        </div>
+
         <h1 className={styles.header}>Interested?</h1>
 
         <div className={styles.gridRow}>
