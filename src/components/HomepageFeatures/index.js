@@ -174,10 +174,7 @@ export default function HomepageFeatures() {
           </p>
           <p>
             Check my CV{' '}
-            <a
-              href='https://drive.google.com/file/d/121IA7eBUVGycnlVfBLVi2h72BeOsXF3L/view?usp=sharing'
-              target='_blank'
-            >
+            <a href='#' target='_blank'>
               here
             </a>
           </p>
